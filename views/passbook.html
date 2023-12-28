@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="heading" class="shadow">
+        <form action="/passbook" method="post" class="row g-3 m-auto mt-0" id="myForm" enctype="application/x-www-form-urlencoded">
+            <div class="col-10 mt-0">
+                <label for="sort" class="form-label">Sort by</label>
+                <select class="form-select" id="sort" name="param1">
+                    <option selected>Choose...</option>
+                    <option value="person" >person</option>
+                    <option value="date" >date</option>
+                </select>
+            </div>
+            <div class="col-10 mt-0">
+                <label for="option" class="form-label">options</label>
+                <select class="form-select" id="option" name="param2">
+                    
+                </select>
+            </div>
+            <div class="row gx-5 mt-3">
+                <div class="col px-3">
+                    <input type="submit" class="btn btn-primary" value="Search" id="searchButton">
+                </div>
+                <div class="col px-3" >
+                    <a href="/" class="btn btn-primary">Home</a>
+                </div>
+            </div> 
+        </form>
+    </div>
+    <div class="text-center" id="searchbar">
+            
+    </div>
+    <div id="trans">
+        
+    </div>
+    <!-- bootstrap javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="/js/index1.js"></script>
+</body>
+</html>

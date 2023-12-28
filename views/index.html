@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="heading" class="shadow">
+        <div class="container text-center pb-4">
+            <div class="row gx-5 mt-2">
+                <div class="col px-3">
+                    <h6 id="currentDate">Date: 12/12/2023 <h6>
+                </div>
+                <div class="col px-3" >
+                    <h6 id="currentTime">Time: 15:30</h6>
+                </div>
+            </div> 
+        </div>
+        <div class="container ">
+            <div class="row g-0 mt-2">
+                <div class="col-auto px-2">
+                    <h6 id="balanceDisplayed">Available Balance: xxxxxx</h6>
+                </div>
+                <div class="col" >
+                    <i class="fa-solid fa-eye-slash fa-sm" style="color: #ffffff;" id="hideEye"></i>
+                </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="row g-0 mt-2">
+                <div class="col-auto px-2">
+                    <h6 id="lastUpdated">Last updated:12/12/2023,12:20</h6>
+                </div>
+                <div class="col-auto" >
+                    <i class="fa-solid fa-rotate-right fa-rotate-180 fa-sm" style="color: #ffffff;" id="loader"></i>
+                </div>
+            </div> 
+        </div>
+        <div class="container text-center ">
+            <div class="row gx-5 mt-4 mb-4">
+                <div class="col px-3">
+                    <a href="/withdraw" class="btn btn-primary">Withdrawn</a>
+                </div>
+                <div class="col px-3" >
+                    <a href="/deposit" class="btn btn-primary">Deposited</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="text-center">
+        <h5>Last Transactions</h5>
+    </div>
+    <div id="trans">
+        <div id="lastTransaction">
+
+        </div>
+        <div class="container text-center ">
+            <div class="row gx-5 mt-4 mb-4">
+                <div class="col px-3">
+                    <a href="passbook" class="btn btn-primary">Passbook</a>
+                </div>
+                <div class="col px-3" >
+                    <a href="#" class="btn btn-primary">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
