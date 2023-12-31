@@ -290,7 +290,7 @@ app.get('/', isAuthenticated,(req, res) => {
                 throw error;
             }
 
-            let j = 5
+            let j = 7
             let NumberOfEntries = results.length
             results.reverse();
             for (const obj of results) {

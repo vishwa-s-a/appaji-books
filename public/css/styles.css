@@ -66,5 +66,9 @@ body{
     border-style:solid;
     margin: auto;
     margin-top: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }
