@@ -56,3 +56,15 @@ body{
 .credit{
     color: green;
 }
+#loginPage{
+    width: 320px;
+    height: 240px;
+    background-color:#937272;
+    color: white;
+    border-radius: 10px;
+    border-color: black;
+    border-style:solid;
+    margin: auto;
+    margin-top: 10px;
+    
+}

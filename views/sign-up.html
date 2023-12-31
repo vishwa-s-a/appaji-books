@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="loginPage" class="shadow">
+        <form action="/sign-up" method="post" class="row g-3 m-auto mt-3" id="myForm">
+            <div class="col-10 mt-0">
+                <label for="email" class="form-label">Enter the email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="col-10 mt-0">
+                <label for="password" class="form-label">Set the password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <div class="row gx-5 mt-3">
+                <div class="col px-3">
+                    <input type="submit" class="btn btn-primary" value="Add user" id="addButton">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class=" container text-center m-auto mt-3">
+        <div class="col px-3">
+            <a href="/" class="btn btn-primary">Home</a>
+        </div>
+    </div>
+    <!-- bootstrap javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
