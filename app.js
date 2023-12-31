@@ -558,7 +558,7 @@ app.post('/deposit',isAuthenticated, (req, res) => {
             }
             else {
                 if (results.length > 0) {
-                    res.send("<script>alert('User already exists, Change the email');window.location.href = 'http://localhost:3000/sign-up';</script>")
+                    res.send("<script>alert('User already exists, Change the email');window.location.href = 'https://appaji-books-nodejs1.onrender.com/sign-up';</script>")
                 }
                 else if (results.length == 0) {
                     async function run() {
@@ -633,20 +633,20 @@ app.post('/deposit',isAuthenticated, (req, res) => {
                                             throw updateError;
                                         }
                                         else{
-                                            res.send("<script>alert('Successfully updated your password');window.location.href = 'http://localhost:3000/profile';</script>")
+                                            res.send("<script>alert('Successfully updated your password');window.location.href = 'https://appaji-books-nodejs1.onrender.com/profile';</script>")
                                         }
                                     });
                                 }
                                 run()
                             }
                             else
-                                res.send("<script>alert('Failed to reset the password,Type your current password correctly');window.location.href = 'http://localhost:3000/profile';</script>")
+                                res.send("<script>alert('Failed to reset the password,Type your current password correctly');window.location.href = 'https://appaji-books-nodejs1.onrender.com/profile';</script>")
                         })()
                     }
 
                 }
                 else {
-                    res.send("<script>alert('Failed to reset the password,Type your username correctly');window.location.href = 'http://localhost:3000/profile';</script>")
+                    res.send("<script>alert('Failed to reset the password,Type your username correctly');window.location.href = 'https://appaji-books-nodejs1.onrender.com/profile';</script>")
                 }
             }
         });
@@ -678,13 +678,13 @@ app.post('/deposit',isAuthenticated, (req, res) => {
                                 res.redirect('/')
                             }
                             else
-                                res.send("<script>alert('Failed to login,Check your credentials');window.location.href = 'http://localhost:3000/login';</script>")
+                                res.send("<script>alert('Failed to login,Check your credentials');window.location.href = 'https://appaji-books-nodejs1.onrender.com/login';</script>")
                         })()
                     }
 
                 }
                 else {
-                    res.send("<script>alert('Failed to login,Check your credentials');window.location.href = 'http://localhost:3000/login';</script>")
+                    res.send("<script>alert('Failed to login,Check your credentials');window.location.href = 'https://appaji-books-nodejs1.onrender.com/login';</script>")
                 }
             }
         });

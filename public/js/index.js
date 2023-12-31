@@ -30,7 +30,7 @@ let balance=""
 // function to get the balance
 let checkBalance=()=>{
     const fetchData = () => {
-        fetch('http://localhost:3000/balance')
+        fetch('https://appaji-books-nodejs1.onrender.com/balance')
         .then(response => {
             if (!response.ok) {
               throw new Error('Network response was not ok');
@@ -55,7 +55,7 @@ checkBalance();
 
 let getLastTransactions=()=>{
     const fetchLastEntries=()=>{
-        fetch('http://localhost:3000/lastTransaction')
+        fetch('https://appaji-books-nodejs1.onrender.com/lastTransaction')
         .then(response=>{
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -78,7 +78,7 @@ getLastTransactions();
 
 let updateBalanceFunc=()=>{
     const fetchData2 = () => {
-        fetch('http://localhost:3000/update')
+        fetch('https://appaji-books-nodejs1.onrender.com/update')
         .then(response => {
             if (!response.ok) {
               throw new Error('Network response was not ok');
